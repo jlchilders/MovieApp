@@ -211,7 +211,12 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Create.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\MovieAppTests\MovieAppTests.csproj">
+      <Project>{0470B919-D099-40AF-AE08-0DA88E0D8CD7}</Project>
+      <Name>MovieAppTests</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -11,9 +11,7 @@ namespace MovieApp.Models
         [Required]
         [Display(Name = "Release Date")]
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
-        [Range(typeof(DateTime), "1/10/2015", "7/13/2021",
-    ErrorMessage = "Value for {0} must be between {1} and {2}")]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)] 
         public DateTime ReleaseDate { get; set; }
         [Required, Range(1,5)]
         public int Rating { get; set; }

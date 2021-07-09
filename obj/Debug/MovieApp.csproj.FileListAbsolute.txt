@@ -81,3 +81,9 @@ C:\Users\janice.childers\source\repos\MovieApp\bin\Microsoft.CodeDom.Providers.D
 C:\Users\janice.childers\source\repos\MovieApp\obj\Debug\MovieApp.csproj.CopyComplete
 C:\Users\janice.childers\source\repos\MovieApp\obj\Debug\MovieApp.dll
 C:\Users\janice.childers\source\repos\MovieApp\obj\Debug\MovieApp.pdb
+C:\Users\janice.childers\source\repos\MovieApp\bin\MovieAppTests.dll
+C:\Users\janice.childers\source\repos\MovieApp\bin\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\janice.childers\source\repos\MovieApp\bin\WebDriver.dll
+C:\Users\janice.childers\source\repos\MovieApp\bin\MovieAppTests.pdb
+C:\Users\janice.childers\source\repos\MovieApp\bin\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\janice.childers\source\repos\MovieApp\bin\WebDriver.xml
