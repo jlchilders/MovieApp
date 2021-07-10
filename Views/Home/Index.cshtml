@@ -26,13 +26,13 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Title)
+            @Html.DisplayFor(modelItem => item.Title, new { htmlAttributes = new { @id = "title" } })
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.ReleaseDate)
+            @Html.DisplayFor(modelItem => item.ReleaseDate, new { htmlAttributes = new { @id = "releaseDate" } })
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Rating)
+            @Html.DisplayFor(modelItem => item.Rating, new { htmlAttributes = new { @id = "rating" } })
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
