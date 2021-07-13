@@ -9,7 +9,9 @@ namespace MovieAppTests
     [TestClass]
     public class AddMovieTests
     {
-        private readonly string _url = "[HomePageURL]";
+        private readonly string _url = "[LoginPageURL]";
+        private readonly string _userName = "[userNameValue]";
+        private readonly string _password = "[passwordValue]";
         private string _titleAdded;
         private readonly IWebDriver driver = new ChromeDriver();
         private List<string> movies;
@@ -48,7 +50,12 @@ namespace MovieAppTests
             try
             {
                 driver.Navigate().GoToUrl(_url);
-                HomePagePOM homePagePOM = new HomePagePOM();
+                
+                LoginPage login = new LoginPage();
+                /*Assume these fields exist*/
+                //login.UserName.SendKeys(_userName);
+                //login.UserName.SendKeys(_password);             
+                HomePagePOM homePagePOM = login.ButtonClick();
                 movies = homePagePOM.MovieDetails();
                 int count = movies.Count;
 
@@ -80,7 +87,12 @@ namespace MovieAppTests
             try
             {
                 driver.Navigate().GoToUrl(_url);
-                HomePagePOM homePagePOM = new HomePagePOM();
+                
+                LoginPage login = new LoginPage();
+                /*Assume these fields exist*/
+                //login.UserName.SendKeys(_userName);
+                //login.UserName.SendKeys(_password);             
+                HomePagePOM homePagePOM = login.ButtonClick();
                 movies = homePagePOM.MovieDetails();
                 int count = movies.Count;
 
@@ -111,7 +123,11 @@ namespace MovieAppTests
             try
             {
                 driver.Navigate().GoToUrl(_url);
-                HomePagePOM homePagePOM = new HomePagePOM();
+                LoginPage login = new LoginPage();
+                /*Assume these fields exist*/
+                //login.UserName.SendKeys(_userName);
+                //login.UserName.SendKeys(_password);             
+                HomePagePOM homePagePOM = login.ButtonClick();
                 movies = homePagePOM.MovieDetails();
                 int count = movies.Count;
 
@@ -141,7 +157,11 @@ namespace MovieAppTests
             try
             {
                 driver.Navigate().GoToUrl(_url);
-                HomePagePOM homePagePOM = new HomePagePOM();
+                LoginPage login = new LoginPage();
+                /*Assume these fields exist*/
+                //login.UserName.SendKeys(_userName);
+                //login.UserName.SendKeys(_password);             
+                HomePagePOM homePagePOM = login.ButtonClick();
                 movies = homePagePOM.MovieDetails();
                 int count = movies.Count;
 
